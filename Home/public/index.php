@@ -1,5 +1,5 @@
 <?php
-    require_once '../../vendor/autoload.php'; // Autoload files using Composer autoload
+    require_once __DIR__.'/../../vendor/autoload.php'; // Autoload files using Composer autoload
     use Phpcourse\Myproject\Classes\MyMainClass; // Use the namespace of the class you want to use
     $myMainClass = new MyMainClass(); // Create an instance of the class
 
