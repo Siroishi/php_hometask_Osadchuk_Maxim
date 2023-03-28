@@ -1,3 +1,9 @@
+<?php
+/**
+ * @var array $message
+ * @var string $code
+ */
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,7 +14,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div>404</div>
+    <div><h1>ERROR CODE: <?=$code?></h1></div>
+    <div><h1>ERROR MESSAGE: <?=$message?></h1></div>
     <a href="/">HOME</a>
 </body>
 </html>

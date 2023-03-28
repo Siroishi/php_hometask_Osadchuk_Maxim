@@ -2,9 +2,11 @@
 
 namespace Phpcourse\Myproject\Classes\Controllers;
 
-class AboutController
+use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
+
+class AboutController implements ControllerMethodName
 {
-    function index(){
+    public function index() : void{
         include_once $_SERVER['DOCUMENT_ROOT'].'/pages/about.php';
     }
 }

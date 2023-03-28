@@ -1,21 +1,26 @@
 <?php
 
 namespace Phpcourse\Myproject\Classes\Router;
+use Exception;
 
 class Router
 {
-    protected array $routes = [];
-
-    function addRoute($route): void
+    private array $routes = [];
+    const PATTERN = 0;
+    const CONTROLLER = 1;
+    const ACTION = 2;
+    public function addRoute(string $pattern,string $controller, string $action): void
     {
-        $this->routes[] = $route;
+        $this->routes[] = [$pattern,$controller,$action];
     }
-
     /**
-     * @return array
+     * @throws Exception
      */
-    public function getRoutes(): array
-    {
-        return $this->routes;
+    public function findRoute(string $URI) : array|Exception{
+        foreach ($this->routes as $key => $route){
+            if($route[self::PATTERN] === $URI)
+                return $this->routes[$key];
+        }
+        throw new Exception('Page not found', 404);
     }
 }
