@@ -25,7 +25,7 @@ class StartApplication
             if($route[0] === $this->URI){
                 $x = $route[2];
                 (new $route[1])->$x();
-            }
+            } // Потрібно придумати як перекинути на 404 якщо немає збігів.
         }
     }
 }
