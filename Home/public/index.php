@@ -4,7 +4,7 @@
 
     // Using the namespaces of the Classes we want to use
     // "use" - keyword to get path to necessary Class
-    use Phpcourse\Myproject\Classes\Controllers\MainController;
+    use Phpcourse\Myproject\Classes\Controllers\HomeController;
     use Phpcourse\Myproject\Classes\Controllers\AboutController;
     use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
     use Phpcourse\Myproject\Classes\Router\Router;
@@ -14,7 +14,7 @@
     $router = new Router();
 
     // And save all routes in it. Now we have 2 pages (main, about)
-    $router->addRoute('/', MainController::class, ControllerMethodName::METHOD_NAME);
+    $router->addRoute('/', HomeController::class, ControllerMethodName::METHOD_NAME);
     $router->addRoute('/about', AboutController::class, ControllerMethodName::METHOD_NAME);
 
     // Start our application.
