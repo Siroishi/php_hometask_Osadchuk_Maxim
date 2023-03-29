@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div>HOME PAGE</div>
+    <h1>Cabinet</h1>
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/cabinet">Cabinet</a>

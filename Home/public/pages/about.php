@@ -9,7 +9,8 @@
 </head>
 <body>
     <div>ABOUT PAGE</div>
-    <a href="/">HOME</a>
-    <a href="/about">ABOUT</a>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/cabinet">Cabinet</a>
 </body>
 </html>

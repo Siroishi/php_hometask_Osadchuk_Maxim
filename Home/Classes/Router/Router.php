@@ -9,6 +9,7 @@ class Router
     const PATTERN = 0;
     const CONTROLLER = 1;
     const ACTION = 2;
+
     public function addRoute(string $pattern,string $controller, string $action): void
     {
         $this->routes[] = [$pattern,$controller,$action];
