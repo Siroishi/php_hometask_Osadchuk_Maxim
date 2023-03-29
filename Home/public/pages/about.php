@@ -12,5 +12,7 @@
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/cabinet">Cabinet</a>
+    <a href="/news">News</a>
+    <a href="/photo">Photos</a>
 </body>
 </html>

@@ -22,6 +22,6 @@ class Router
             if($route[self::PATTERN] === $URI)
                 return $this->routes[$key];
         }
-        throw new Exception('Page not found', 404);
+        throw new Exception('Hello! Page not found', 404);
     }
 }

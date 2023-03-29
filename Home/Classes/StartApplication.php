@@ -28,6 +28,8 @@ class StartApplication
     {
         try{ // спробуємо знайти збіг нашого URI з патерном роутера
             $match = $this->routerData->findRoute($this->URI);
+            // $match[3]
+            // pattern ControllerName Action=index
             $controller = $match[self::CONTROLLER];
             $action = $match[self::ACTION];
             (new $controller)->$action();

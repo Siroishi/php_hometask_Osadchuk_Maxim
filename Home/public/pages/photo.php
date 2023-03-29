@@ -1,3 +1,9 @@
+<?php
+/**
+ * @var array $list
+ */
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,11 +14,20 @@
     <title>Document</title>
 </head>
 <body>
-    <div>CABINET</div>
+    <div>PHOTO</div>
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/cabinet">Cabinet</a>
     <a href="/news">News</a>
     <a href="/photo">Photos</a>
+
+    <ul>
+        <?php
+            foreach($list as $src) {
+                echo "<p>$src</p>";
+                echo "<img src='$src' alt=''>";
+            }
+        ?>
+    </ul>
 </body>
 </html>

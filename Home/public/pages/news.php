@@ -8,11 +8,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div>CABINET</div>
+    <div>NEWS</div>
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/cabinet">Cabinet</a>
     <a href="/news">News</a>
     <a href="/photo">Photos</a>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
 </body>
 </html>

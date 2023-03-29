@@ -14,8 +14,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div><h1>ERROR CODE: <?=$code?></h1></div>
-    <div><h1>ERROR MESSAGE: <?=$message?></h1></div>
+    <div><h1>ERROR CODE: <?php echo $code?></h1></div>
+    <div><h1>ERROR MESSAGE: <?php echo $message?></h1></div>
     <a href="/">HOME</a>
 </body>
 </html>

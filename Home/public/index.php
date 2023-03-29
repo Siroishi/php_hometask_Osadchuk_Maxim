@@ -6,7 +6,9 @@
     use Phpcourse\Myproject\Classes\Controllers\HomeController;
     use Phpcourse\Myproject\Classes\Controllers\AboutController;
     use Phpcourse\Myproject\Classes\Controllers\CabinetController;
-    use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
+    use Phpcourse\Myproject\Classes\Controllers\NewsController;
+    // use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
+    use Phpcourse\Myproject\Classes\Controllers\PhotoController;
     use Phpcourse\Myproject\Classes\Router\Router;
     use Phpcourse\Myproject\Classes\StartApplication;
 
@@ -14,9 +16,12 @@
     $router = new Router();
 
     // And save all routes in it. Now we have 2 pages (main, about)
-    $router->addRoute('/', HomeController::class, ControllerMethodName::METHOD_NAME);
-    $router->addRoute('/about', AboutController::class, ControllerMethodName::METHOD_NAME);
-    $router->addRoute('/cabinet', CabinetController::class,ControllerMethodName::METHOD_NAME);
+    $router->addRoute('/', HomeController::class, 'index');
+    $router->addRoute('/about', AboutController::class, 'index');
+    $router->addRoute('/cabinet', CabinetController::class,'index');
+    $router->addRoute('/news',NewsController::class, 'index');
+    $router->addRoute('/home', HomeController::class, 'index');
+    $router->addRoute('/photo',PhotoController::class,'index');
 
     // Start our application.
     $app = new StartApplication($router, $_SERVER['REQUEST_URI'] ?? '/');
