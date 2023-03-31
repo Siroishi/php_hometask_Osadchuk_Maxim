@@ -3,10 +3,15 @@
 namespace Phpcourse\Myproject\Classes\Controllers;
 
 use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
+use Phpcourse\Myproject\Classes\Rendering\SmartyRendering;
 
 class AboutController implements ControllerMethodName
 {
+    /**
+     * @throws \SmartyException
+     */
     public function index() : void{
-        include_once $_SERVER['DOCUMENT_ROOT'].'/pages/about.php';
+        $data = ['title' => 'About'];
+        new SmartyRendering('templates/default/about.tpl', $data);
     }
 }

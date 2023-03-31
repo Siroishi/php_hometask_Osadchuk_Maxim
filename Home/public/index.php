@@ -1,29 +1,32 @@
 <?php
-    // Autoload Classes using Composer autoload
+
     require_once __DIR__.'/../../vendor/autoload.php';
-    // Using the namespaces of the Classes we want to use
-    // "use" - keyword to get path to necessary Class
+
     use Phpcourse\Myproject\Classes\Controllers\HomeController;
     use Phpcourse\Myproject\Classes\Controllers\AboutController;
     use Phpcourse\Myproject\Classes\Controllers\CabinetController;
     use Phpcourse\Myproject\Classes\Controllers\NewsController;
-    // use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
+    use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
     use Phpcourse\Myproject\Classes\Controllers\PhotoController;
     use Phpcourse\Myproject\Classes\Router\Router;
     use Phpcourse\Myproject\Classes\StartApplication;
 
-    // Create object of Class Router
     $router = new Router();
 
-    // And save all routes in it. Now we have 2 pages (main, about)
-    $router->addRoute('/', HomeController::class, 'index');
-    $router->addRoute('/about', AboutController::class, 'index');
-    $router->addRoute('/cabinet', CabinetController::class,'index');
-    $router->addRoute('/news',NewsController::class, 'index');
-    $router->addRoute('/home', HomeController::class, 'index');
-    $router->addRoute('/photo',PhotoController::class,'index');
+    $router->addRoute('/', HomeController::class, ControllerMethodName::METHOD_NAME);
+    $router->addRoute('/about', AboutController::class, ControllerMethodName::METHOD_NAME);
+    $router->addRoute('/cabinet', CabinetController::class,ControllerMethodName::METHOD_NAME);
+    $router->addRoute('/news',NewsController::class, ControllerMethodName::METHOD_NAME);
+    $router->addRoute('/home', HomeController::class, ControllerMethodName::METHOD_NAME);
+    $router->addRoute('/photo',PhotoController::class,ControllerMethodName::METHOD_NAME);
 
-    // Start our application.
     $app = new StartApplication($router, $_SERVER['REQUEST_URI'] ?? '/');
+    try {
+        $app->run();
+    } catch (SmartyException $e) {
+        echo $e->getMessage();
+    }
 
-    $app->run();
+
+$var = 1;
+    $text = "text$var";

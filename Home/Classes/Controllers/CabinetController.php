@@ -3,11 +3,17 @@
 namespace Phpcourse\Myproject\Classes\Controllers;
 
 use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
+use Phpcourse\Myproject\Classes\Rendering\SmartyRendering;
+use SmartyException;
 
 class CabinetController implements ControllerMethodName
 {
+    /**
+     * @throws SmartyException
+     */
     public function index(): void
     {
-        include_once $_SERVER['DOCUMENT_ROOT'].'/pages/cabinet.php';
+        $data = ['title' => 'Cabinet'];
+        new SmartyRendering('templates/default/cabinet.tpl', $data);
     }
 }

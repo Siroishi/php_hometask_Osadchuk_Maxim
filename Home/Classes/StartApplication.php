@@ -4,6 +4,7 @@ namespace Phpcourse\Myproject\Classes;
 
 use Phpcourse\Myproject\Classes\Controllers\NotFoundController;
 use Phpcourse\Myproject\Classes\Router\Router;
+use SmartyException;
 
 class StartApplication
 {
@@ -24,6 +25,9 @@ class StartApplication
         $this->routerData = $router;
     }
 
+    /**
+     * @throws SmartyException
+     */
     public function run(): void
     {
         try{ // спробуємо знайти збіг нашого URI з патерном роутера
@@ -34,7 +38,10 @@ class StartApplication
             $action = $match[self::ACTION];
             (new $controller)->$action();
         }catch(\Throwable $e){
-            (new NotFoundController)->showErrorPage($e->getMessage(),$e->getCode());
+            (new NotFoundController)->showErrorPage(
+                $e->getMessage(),
+                $e->getCode(),
+            );
         }
     }
 }

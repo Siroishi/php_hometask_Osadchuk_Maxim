@@ -3,15 +3,17 @@
 namespace Phpcourse\Myproject\Classes\Controllers;
 
 use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
+use Phpcourse\Myproject\Classes\Rendering\SmartyRendering;
+use SmartyException;
 
 class NewsController implements ControllerMethodName
 {
-
     /**
-     * @return void
+     * @throws SmartyException
      */
     public function index(): void
     {
-        include_once $_SERVER['DOCUMENT_ROOT'].'/pages/news.php';
+        $data = ['title' => 'News'];
+        new SmartyRendering('templates/default/news.tpl', $data);
     }
 }
