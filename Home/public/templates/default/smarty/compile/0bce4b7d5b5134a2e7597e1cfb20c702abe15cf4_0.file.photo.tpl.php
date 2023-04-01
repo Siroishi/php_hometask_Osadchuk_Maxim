@@ -1,6 +1,6 @@
 <?php
 /* Smarty version 4.3.1, created on 2023-03-30 12:26:35
-  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\photo.tpl' */
+  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\sp.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
@@ -11,7 +11,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
     '0bce4b7d5b5134a2e7597e1cfb20c702abe15cf4' => 
     array (
-      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\photo.tpl',
+      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\sp.tpl',
       1 => 1680179183,
       2 => 'file',
     ),

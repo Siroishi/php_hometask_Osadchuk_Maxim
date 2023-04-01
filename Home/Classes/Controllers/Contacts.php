@@ -6,14 +6,14 @@ use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
 use Phpcourse\Myproject\Classes\Rendering\SmartyRendering;
 use SmartyException;
 
-class CabinetController implements ControllerMethodName
+class Contacts implements ControllerMethodName
 {
     /**
      * @throws SmartyException
      */
     public function index(): void
     {
-        $data = ['title' => 'Cabinet'];
-        new SmartyRendering('templates/default/cabinet.tpl', $data);
+        $data = ['title' => 'Contacts'];
+        new SmartyRendering('templates/default/contacts.tpl', $data);
     }
 }

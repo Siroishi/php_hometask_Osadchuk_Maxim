@@ -1,3 +1,4 @@
+{* Smarty *}
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,3 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{$title}</title>
 </head>
+<body>
+    {include file="sections/header.tpl"}
+    <div>STUDENTS PARLIAMENT</div>
+    {include file="sections/footer.tpl"}
+</body>
+</html>

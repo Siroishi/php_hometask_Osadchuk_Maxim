@@ -9,11 +9,8 @@
     <title>{$title}</title>
 </head>
 <body>
-    <div>HELLO HOME PAGE</div>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/cabinet">Cabinet</a>
-    <a href="/news">News</a>
-    <a href="/photo">Photos</a>
+    {include file="sections/header.tpl"}
+    <div>HOME PAGE</div>
+    {include file="sections/footer.tpl"}
 </body>
 </html>

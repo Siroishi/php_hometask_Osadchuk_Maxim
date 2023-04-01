@@ -9,12 +9,7 @@
     <title>{$title}</title>
 </head>
 <body>
-    <div>NEWS</div>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/cabinet">Cabinet</a>
-    <a href="/news">News</a>
-    <a href="/photo">Photos</a>
+    {include file="sections/header.tpl"}
     <ul>
         <li>1</li>
         <li>2</li>
@@ -27,5 +22,6 @@
         <li>9</li>
         <li>10</li>
     </ul>
+    {include file="sections/footer.tpl"}
 </body>
 </html>

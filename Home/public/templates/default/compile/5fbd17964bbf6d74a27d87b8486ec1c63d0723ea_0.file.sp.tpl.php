@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-04-01 21:33:52
-  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\home.tpl' */
+/* Smarty version 4.3.1, created on 2023-04-01 21:33:57
+  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\sp.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6428a340875782_66234045',
+  'unifunc' => 'content_6428a345162d98_21767790',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'a3d291f5beaea8b0f7ebb39988ec3049615f8018' => 
+    '5fbd17964bbf6d74a27d87b8486ec1c63d0723ea' => 
     array (
-      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\home.tpl',
+      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\sp.tpl',
       1 => 1680384829,
       2 => 'file',
     ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:sections/footer.tpl' => 1,
   ),
 ),false)) {
-function content_6428a340875782_66234045 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6428a345162d98_21767790 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -36,7 +36,7 @@ function content_6428a340875782_66234045 (Smarty_Internal_Template $_smarty_tpl)
 <body>
     <?php $_smarty_tpl->_subTemplateRender("file:sections/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-    <div>HOME PAGE</div>
+    <div>STUDENTS PARLIAMENT</div>
     <?php $_smarty_tpl->_subTemplateRender("file:sections/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 </body>

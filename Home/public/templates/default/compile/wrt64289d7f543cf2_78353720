@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-03-30 12:06:13
-  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\cabinet.tpl' */
+/* Smarty version 4.3.1, created on 2023-04-01 21:09:19
+  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\contacts.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64257b35b4c4d7_05226734',
+  'unifunc' => 'content_64289d7f542964_81724450',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '9cf70d3c1100ccd1f697e4960085ee586747e80f' => 
+    '6cdff2d966b29df23fdc0292dce49dcafeb7a3fa' => 
     array (
-      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\cabinet.tpl',
-      1 => 1680177239,
+      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\contacts.tpl',
+      1 => 1680383358,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64257b35b4c4d7_05226734 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64289d7f542964_81724450 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -31,12 +31,12 @@ function content_64257b35b4c4d7_05226734 (Smarty_Internal_Template $_smarty_tpl)
     <title>Document</title>
 </head>
 <body>
-    <div>CABINET</div>
+    <div>CONTACTS</div>
     <a href="/">Home</a>
     <a href="/about">About</a>
-    <a href="/cabinet">Cabinet</a>
+    <a href="/contacts">Contacts</a>
     <a href="/news">News</a>
-    <a href="/photo">Photos</a>
+    <a href="/sp">Parliament</a>
 </body>
 </html>
 <?php }

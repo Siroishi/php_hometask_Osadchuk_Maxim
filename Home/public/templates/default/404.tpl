@@ -9,8 +9,10 @@
     <title>Error: {$title}</title>
 </head>
 <body>
+    {include file="sections/header.tpl"}
     <div><h4>ERROR CODE: {$code} </h4></div>
     <div><h4>ERROR MESSAGE: {$message}</h4></div>
     <a href="/">HOME</a>
+    {include file="sections/footer.tpl"}
 </body>
 </html>
