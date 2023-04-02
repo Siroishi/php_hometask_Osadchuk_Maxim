@@ -1,12 +1,14 @@
 <?php
 
-namespace Phpcourse\Myproject\Classes\Controllers;
+namespace Phpcourse\Myproject\Classes\Controllers\MainPages;
 
 use Phpcourse\Myproject\Classes\Rendering\SmartyRendering;
+use Phpcourse\Myproject\Classes\Traits\TraitAuth;
 use SmartyException;
 
 class NotFoundController
 {
+    use TraitAuth;
     /**
      * @throws SmartyException
      */
@@ -15,7 +17,7 @@ class NotFoundController
         string $code,
     ): void
     {
-        $data = ['title' => $code, 'message' => $message, 'code' => $code];
-        new SmartyRendering('templates/default/404.tpl', $data);
+        $data = ['title' => $code, 'message' => $message, 'code' => $code, 'content' => 'content/404'];
+        new SmartyRendering($data);
     }
 }

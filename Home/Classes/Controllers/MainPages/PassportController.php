@@ -1,22 +1,21 @@
 <?php
 
-namespace Phpcourse\Myproject\Classes\Controllers\Categories\Students;
+namespace Phpcourse\Myproject\Classes\Controllers\MainPages;
 
 use Phpcourse\Myproject\Classes\Interfaces\ControllerMethodName;
 use Phpcourse\Myproject\Classes\Rendering\SmartyRendering;
 use Phpcourse\Myproject\Classes\Traits\TraitAuth;
 use SmartyException;
 
-class PortfolioController implements ControllerMethodName
+class PassportController implements ControllerMethodName
 {
     use TraitAuth;
     /**
-     * @return void
      * @throws SmartyException
      */
     public function index(): void
     {
-        $data = ['title' => 'Portfolios', 'content' => 'categories/students/portfolios', 'auth' => $this->startLogin()];
+        $data = ['title' => 'Passport', 'content' => 'categories/services/passport', 'auth' => $this->startLogin()];
         new SmartyRendering($data);
     }
 }

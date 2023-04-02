@@ -1,4 +1,3 @@
-{* Smarty *}
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,8 +8,3 @@
     <title>{$title}</title>
 </head>
 <body>
-    {include file="sections/header.tpl"}
-    <div>HOME PAGE</div>
-    {include file="sections/footer.tpl"}
-</body>
-</html>

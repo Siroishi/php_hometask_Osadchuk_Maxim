@@ -2,7 +2,7 @@
 
 namespace Phpcourse\Myproject\Classes;
 
-use Phpcourse\Myproject\Classes\Controllers\NotFoundController;
+use Phpcourse\Myproject\Classes\Controllers\MainPages\NotFoundController;
 use Phpcourse\Myproject\Classes\Router\Router;
 use SmartyException;
 
@@ -28,8 +28,8 @@ class StartApplication
     /**
      * @throws SmartyException
      */
-    public function run(): void
-    {
+    public function run(): void{
+        $this->checkRequest();
         try{ // спробуємо знайти збіг нашого URI з патерном роутера
             $match = $this->routerData->findRoute($this->URI);
             // $match[3]
@@ -42,6 +42,18 @@ class StartApplication
                 $e->getMessage(),
                 $e->getCode(),
             );
+        }
+    }
+
+    public function checkRequest(): void
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if (isset($_POST['login']) && isset($_POST['password'])) {
+                session_start();
+                $_SESSION['login'] = $_POST['login'];
+                $_SESSION['password'] = $_POST['password'];
+                header('Location: /');
+            }
         }
     }
 }

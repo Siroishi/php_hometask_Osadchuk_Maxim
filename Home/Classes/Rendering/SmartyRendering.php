@@ -8,7 +8,7 @@ class SmartyRendering extends Smarty {
     /**
      * @throws SmartyException
      */
-    public function __construct(string $page, array $data){
+    public function __construct(array $data){
         parent::__construct();
 
         $smarty = new Smarty();
@@ -25,7 +25,7 @@ class SmartyRendering extends Smarty {
             $smarty->assign($key,$param);
         }
 
-        $smarty->display($page);
+        $smarty->display('templates/default/index.tpl');
     }
 
 }
