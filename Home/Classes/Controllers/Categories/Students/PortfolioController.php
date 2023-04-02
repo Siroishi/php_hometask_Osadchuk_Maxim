@@ -9,7 +9,6 @@ use SmartyException;
 class PortfolioController implements ControllerMethodName
 {
     /**
-     * @return void
      * @throws SmartyException
      */
     public function index(): void

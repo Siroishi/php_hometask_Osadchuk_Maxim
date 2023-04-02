@@ -15,7 +15,7 @@ class NotFoundController
         string $code,
     ): void
     {
-        $data = ['title' => $code, 'message' => $message, 'code' => $code];
+        $data = ['title' => $code, 'message' => $message, 'code' => $code, 'content' => 'content/404'];
         new SmartyRendering($data);
     }
 }

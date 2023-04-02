@@ -1,42 +1,29 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-04-01 21:27:18
+/* Smarty version 4.3.1, created on 2023-04-02 14:34:44
   from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\categories\students\portfolios.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6428a1b69a2397_72142512',
+  'unifunc' => 'content_6429928466abd6_59838238',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2bca5eca67a8e3816366404c3f0d477e5e9699a2' => 
     array (
       0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\categories\\students\\portfolios.tpl',
-      1 => 1680384437,
+      1 => 1680445819,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
-    'file:sections/header.tpl' => 1,
   ),
 ),false)) {
-function content_6428a1b69a2397_72142512 (Smarty_Internal_Template $_smarty_tpl) {
-?><!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
-</title>
-</head>
-<body>
-    <?php $_smarty_tpl->_subTemplateRender("file:sections/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
+function content_6429928466abd6_59838238 (Smarty_Internal_Template $_smarty_tpl) {
+?>    <div>PORTFOLIOS LIST</div>
+    <h2>КН22</h2>
     <div>
-        <h2>КН22</h2>
         <ul>
             <li><a href="/">Власова К</a></li>
             <li><a href="/">Власова М</a></li>
@@ -95,7 +82,5 @@ function content_6428a1b69a2397_72142512 (Smarty_Internal_Template $_smarty_tpl)
             <li><a href="/">Хатіна</a></li>
         </ul>
     </div>
-</body>
-</html>
 <?php }
 }
