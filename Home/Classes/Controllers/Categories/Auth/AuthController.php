@@ -14,7 +14,7 @@ class AuthController
      */
     public function login(): void
     {
-        $data = ['title' => 'Login', 'content' => 'categories/services/auth/login', 'auth' => $this->startLogin()];
+        $data = ['title' => 'Login', 'content' => 'categories/services/auth/login'];
         new SmartyRendering($data);
     }
     public function logout(): void
