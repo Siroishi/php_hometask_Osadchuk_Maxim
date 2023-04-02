@@ -12,7 +12,7 @@ class AboutController implements ControllerMethodName
      * @throws SmartyException
      */
     public function index() : void{
-        $data = ['title' => 'About', 'content' => 'content/about'];
+        $data = ['title' => 'About', 'content' => 'main_pages/about'];
         new SmartyRendering($data);
     }
 }

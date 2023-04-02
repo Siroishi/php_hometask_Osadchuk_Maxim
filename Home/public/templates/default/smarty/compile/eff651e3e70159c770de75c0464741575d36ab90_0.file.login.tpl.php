@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-04-02 13:06:02
-  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\categories\services\auth\login.tpl' */
+/* Smarty version 4.3.1, created on 2023-04-02 15:29:56
+  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\tpl\content\auth\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64297dbabf5d05_49489315',
+  'unifunc' => 'content_64299f74b58b52_85426883',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '5a49c39e6498afb51c452e387a6747f81d60889e' => 
+    'eff651e3e70159c770de75c0464741575d36ab90' => 
     array (
-      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\categories\\services\\auth\\login.tpl',
+      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\tpl\\content\\auth\\login.tpl',
       1 => 1680439284,
       2 => 'file',
     ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64297dbabf5d05_49489315 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64299f74b58b52_85426883 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div>LOGIN PAGE</div>
 <form method="post" action="">
     <label>

@@ -13,7 +13,7 @@ class NewsController implements ControllerMethodName
      */
     public function index(): void
     {
-        $data = ['title' => 'News', 'content' => 'content/news'];
+        $data = ['title' => 'News', 'content' => 'main_pages/news'];
         new SmartyRendering($data);
     }
 }

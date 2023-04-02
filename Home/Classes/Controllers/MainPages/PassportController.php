@@ -13,7 +13,7 @@ class PassportController implements ControllerMethodName
      */
     public function index(): void
     {
-        $data = ['title' => 'Passport', 'content' => 'categories/services/passport'];
+        $data = ['title' => 'Passport', 'content' => 'additional_pages/passport'];
         new SmartyRendering($data);
     }
 }

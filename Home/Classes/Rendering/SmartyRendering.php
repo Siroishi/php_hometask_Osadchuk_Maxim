@@ -12,13 +12,13 @@ class SmartyRendering extends Smarty {
      * @throws SmartyException
      */
     public function __construct(array $data){
-                parent::__construct();
+        parent::__construct();
 
         $smarty = new Smarty();
-        $smarty->setTemplateDir('templates/default');
-        $smarty->setCompileDir('templates/default/compile');
-        $smarty->setConfigDir('templates/default/config');
-        $smarty->setCacheDir('templates/default/cache');
+        $smarty->setTemplateDir('templates/default/tpl');
+        $smarty->setCompileDir('templates/default/smarty/compile');
+        $smarty->setConfigDir('templates/default/smarty/config');
+        $smarty->setCacheDir('templates/default/smarty/cache');
         $this->caching = Smarty::CACHING_LIFETIME_CURRENT;
 
         $smarty->assign('auth',$this->startLogin());

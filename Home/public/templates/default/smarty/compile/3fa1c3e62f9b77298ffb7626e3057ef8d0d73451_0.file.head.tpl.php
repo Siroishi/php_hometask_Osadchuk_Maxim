@@ -1,27 +1,26 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-04-01 21:27:22
-  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\home.tpl' */
+/* Smarty version 4.3.1, created on 2023-04-02 15:06:43
+  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\tpl\blocks\head.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6428a1ba182816_53635207',
+  'unifunc' => 'content_64299a039b6590_98697006',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'a3d291f5beaea8b0f7ebb39988ec3049615f8018' => 
+    '3fa1c3e62f9b77298ffb7626e3057ef8d0d73451' => 
     array (
-      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\home.tpl',
-      1 => 1680383772,
+      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\tpl\\blocks\\head.tpl',
+      1 => 1680439452,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
-    'file:sections/header.tpl' => 1,
   ),
 ),false)) {
-function content_6428a1ba182816_53635207 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64299a039b6590_98697006 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -33,9 +32,5 @@ function content_6428a1ba182816_53635207 (Smarty_Internal_Template $_smarty_tpl)
 </title>
 </head>
 <body>
-    <?php $_smarty_tpl->_subTemplateRender("file:sections/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
-</body>
-</html>
 <?php }
 }

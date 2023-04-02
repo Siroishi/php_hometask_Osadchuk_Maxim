@@ -17,8 +17,9 @@ trait TraitAuth{
     function startLogout(): void
     {
         session_start();
-        session_destroy();
-        header('Location: /');
+        if(session_destroy()){
+            header('Location: /');
+        }
     }
     function startLogin(): string|bool
     {

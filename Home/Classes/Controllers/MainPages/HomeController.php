@@ -12,7 +12,7 @@ class HomeController implements ControllerMethodName
      * @throws SmartyException
      */
     public function index() : void{
-        $data = ['title' => 'Home', 'content' => 'content/home'];
+        $data = ['title' => 'Home', 'content' => 'main_pages/home'];
         new SmartyRendering($data);
     }
 }

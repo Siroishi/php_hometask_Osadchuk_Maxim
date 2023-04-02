@@ -13,7 +13,7 @@ class StudentsParliamentController implements ControllerMethodName
      */
     public function index(): void
     {
-        $data = ['title' => 'Students Parliament', 'content' => 'content/sp'];
+        $data = ['title' => 'Students Parliament', 'content' => 'main_pages/sp'];
         new SmartyRendering($data);
     }
 }

@@ -13,7 +13,7 @@ class ContactsController implements ControllerMethodName
      */
     public function index(): void
     {
-        $data = ['title' => 'Contacts', 'content' => 'content/contacts'];
+        $data = ['title' => 'Contacts', 'content' => 'main_pages/contacts'];
         new SmartyRendering($data);
     }
 }

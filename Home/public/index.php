@@ -1,4 +1,6 @@
 <?php
+    $debug = true;
+
     require_once __DIR__.'/../../vendor/autoload.php';
 
     use Phpcourse\Myproject\Classes\Controllers\Categories\Auth\AuthController;

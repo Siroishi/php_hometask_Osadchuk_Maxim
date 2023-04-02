@@ -3,10 +3,12 @@
 namespace Phpcourse\Myproject\Classes\Controllers\MainPages;
 
 use Phpcourse\Myproject\Classes\Rendering\SmartyRendering;
+use Phpcourse\Myproject\Classes\Traits\DebugTrait;
 use SmartyException;
 
 class NotFoundController
 {
+    use DebugTrait;
     /**
      * @throws SmartyException
      */
@@ -15,7 +17,8 @@ class NotFoundController
         string $code,
     ): void
     {
-        $data = ['title' => $code, 'message' => $message, 'code' => $code, 'content' => 'content/404'];
+        self::debugConsole('Not found');
+        $data = ['title' => $code, 'message' => $message, 'code' => $code, 'content' => 'error_pages/404'];
         new SmartyRendering($data);
     }
 }
