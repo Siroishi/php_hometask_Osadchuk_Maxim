@@ -3,12 +3,12 @@
 namespace Phpcourse\Myproject\Classes\Controllers\Categories\Auth;
 
 use Phpcourse\Myproject\Classes\Rendering\SmartyRendering;
-use Phpcourse\Myproject\Classes\Traits\TraitAuth;
+use Phpcourse\Myproject\Classes\Traits\AuthTrait;
 use SmartyException;
 
 class AuthController
 {
-    use TraitAuth;
+    use AuthTrait;
     /**
      * @throws SmartyException
      */

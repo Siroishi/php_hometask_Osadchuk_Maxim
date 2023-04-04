@@ -2,9 +2,10 @@
 
 namespace Phpcourse\Myproject\Classes\Traits;
 
-trait TraitAuth{
+trait AuthTrait{
     private function checkAuth(): bool
     {
+        session_start();
         if(!isset($_SESSION['login']) || !isset($_SESSION['password'])){
             return false;
         }
@@ -21,9 +22,8 @@ trait TraitAuth{
             header('Location: /');
         }
     }
-    function startLogin(): string|bool
+    function startLogin(): mixed
     {
-        session_start();
         if($this->checkAuth()){
             return $_SESSION['login'];
         }

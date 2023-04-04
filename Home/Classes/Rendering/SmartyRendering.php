@@ -1,17 +1,17 @@
 <?php
 
 namespace Phpcourse\Myproject\Classes\Rendering;
-use Phpcourse\Myproject\Classes\Traits\TraitAuth;
+use Phpcourse\Myproject\Classes\Traits\AuthTrait;
 use Smarty;
 use SmartyException;
 
 class SmartyRendering extends Smarty {
-    use TraitAuth;
+    use AuthTrait;
 
     /**
      * @throws SmartyException
      */
-    public function __construct(array $data){
+    public function __construct(array $data, string $template = 'index.tpl'){
         parent::__construct();
 
         $smarty = new Smarty();
@@ -23,13 +23,10 @@ class SmartyRendering extends Smarty {
 
         $smarty->assign('auth',$this->startLogin());
 
-        extract($data);
-
         foreach ($data as $key => $param){
-            global $$key;
             $smarty->assign($key,$param);
         }
 
-        $smarty->display('templates/default/index.tpl');
+        $smarty->display("templates/default/$template");
     }
 }

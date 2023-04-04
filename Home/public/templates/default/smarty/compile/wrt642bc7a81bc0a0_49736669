@@ -1,4 +1,27 @@
-    <div>PORTFOLIOS LIST</div>
+<?php
+/* Smarty version 4.3.1, created on 2023-04-04 06:46:00
+  from 'D:\Dropbox\PHPTestProject\Home\public\templates\default\tpl\content\additional_pages\portfolios.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.1',
+  'unifunc' => 'content_642bc7a81bac52_01113919',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '715127426f6010234f67d5be88768d9e6f4cbf12' => 
+    array (
+      0 => 'D:\\Dropbox\\PHPTestProject\\Home\\public\\templates\\default\\tpl\\content\\additional_pages\\portfolios.tpl',
+      1 => 1680590758,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_642bc7a81bac52_01113919 (Smarty_Internal_Template $_smarty_tpl) {
+?>    <div>PORTFOLIOS LIST</div>
     <h2>КН22</h2>
     <div>
         <ul>
@@ -59,3 +82,5 @@
             <li><a href="/">Хатіна</a></li>
         </ul>
     </div>
+<?php }
+}

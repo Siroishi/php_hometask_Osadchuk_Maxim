@@ -1,5 +1,5 @@
 <?php
-    $debug = true;
+    //$debug = true;
 
     require_once __DIR__.'/../../vendor/autoload.php';
 
@@ -29,6 +29,8 @@
     $router->addRoute('/passport', PassportController::class, ControllerMethodName::METHOD_NAME);
     $router->addRoute('/login', AuthController::class, 'login');
     $router->addRoute('/logout', AuthController::class, 'logout');
+
+    $router->addRoute('/admin', AdminController::class, ControllerMethodName::METHOD_NAME);
 
     $app = new StartApplication($router, $_SERVER['REQUEST_URI'] ?? '/');
     try {

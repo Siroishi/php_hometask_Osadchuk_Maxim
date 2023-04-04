@@ -13,7 +13,7 @@ class PortfolioController implements ControllerMethodName
      */
     public function index(): void
     {
-        $data = ['title' => 'Portfolios', 'content' => 'categories/students/portfolios'];
+        $data = ['title' => 'Portfolios', 'content' => 'additional_pages/portfolios'];
         new SmartyRendering($data);
     }
 }
