@@ -2,7 +2,7 @@
 
 namespace Phpcourse\Myproject\Classes;
 
-use Phpcourse\Myproject\Classes\Controllers\MainPages\NotFoundController;
+use Phpcourse\Myproject\Classes\Controllers\NotFoundController;
 use Phpcourse\Myproject\Classes\Router\Router;
 use Phpcourse\Myproject\Classes\Traits\DebugTrait;
 use SmartyException;

@@ -1,1 +1,0 @@
-<div>CONTACTS PAGE</div>

@@ -1,1 +1,0 @@
-<div>STUDENTS PARLIAMENT</div>
