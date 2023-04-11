@@ -10,11 +10,12 @@
     },
     "authors": [
         {
-            "name": "My Name",
-            "email": "MyEmail@gmail.com"
+            "name": "Maximo",
+            "email": "red_fury@ukr.net"
         }
     ],
     "minimum-stability": "beta",
     "require": {
+        "smarty/smarty": "^4.3"
     }
 }
